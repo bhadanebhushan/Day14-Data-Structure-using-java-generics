@@ -46,5 +46,3 @@ public class LinkedList {
 		newNode.next = tempNode;
 	}
 }
-
-}

@@ -29,4 +29,9 @@ public class Operations {
 		linkedList.print();
 
 	}
+
+	public static void deleteFirstNode() {
+		System.out.println("\nAfter:");
+		
+	}
 }
