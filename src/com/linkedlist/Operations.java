@@ -1,12 +1,13 @@
 package com.linkedlist;
 
 public class Operations {
-	public static void addDataAtStart() {
+	public static LinkedList addDataAtStart() {
 		LinkedList linkedList = new LinkedList();
 		linkedList.push(70);
 		linkedList.push(30);
 		linkedList.push(56);
 		linkedList.print();
+		return linkedList;
 	}
 
 	public static void addDataAtEnd() {
@@ -25,7 +26,7 @@ public class Operations {
 		System.out.println("Before:");
 		linkedList.print();
 		linkedList.insertInBetween(firstNode, newNode);
-		System.out.println("\nAfter:");
+		System.out.println("after:");
 		linkedList.print();
 
 	}
@@ -40,4 +41,10 @@ public class Operations {
 		LinkedList linkedList = addDataAtStart();
 		linkedList.popLast();
 		linkedList.print();
+	}
+
+	public static void findNodeBasedOnValue() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.searchNode(30);
+	}
 }

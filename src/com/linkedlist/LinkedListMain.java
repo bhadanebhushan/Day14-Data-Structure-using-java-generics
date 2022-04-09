@@ -10,6 +10,8 @@ public class LinkedListMain {
 		System.out.println("Enter 2 to add the data at the end");
 		System.out.println("Enter 3 to insert data inBetween");
 		System.out.println("Enter 4 to delete data of first node");
+		System.out.println("enter 5 to delete data of last node");
+		System.out.println("Enter 6 to find index number,node with value 30 in linked list");
 		switch (scanner.nextInt()) {
 		case 1:
 			Operations.addDataAtStart();
@@ -23,6 +25,12 @@ public class LinkedListMain {
 		case 4:
 			Operations.deleteFirstNode();
 			break;
+		case 5:
+			Operations.deleteLastNode();
+			break;
+		case 6:
+			Operations.findNodeBasedOnValue();
 		}
+
 	}
 }
