@@ -31,7 +31,13 @@ public class Operations {
 	}
 
 	public static void deleteFirstNode() {
-		System.out.println("\nAfter:");
-		
+		LinkedList linkedList = addDataAtStart();
+		linkedList.pop();
+		linkedList.print();
 	}
+
+	public static void deleteLastNode() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.popLast();
+		linkedList.print();
 }
